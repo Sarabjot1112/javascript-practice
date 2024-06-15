@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a,b,c;
+        let i = 1, n, sum;
+        n = +prompt("enter last number");
+        document.write(n);
+        document.write("armstrong number are <br>");
+        while (i <= n) {
+            a = i % 10;
+            b = i % 100;
+            b = parseInt((b - a) / 10);
+            c = parseInt(i / 100);
+            sum = ((a * a * a) + (b * b * b) + (c * c * c));
+            if ((sum) == i){
+                document.write(`${i}<br>`);
+            }
+            i++;
+        }
+    </script>
+</body>
+
+</html>

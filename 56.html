@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let m =21, p, c;
+        while (true) {
+            p= +prompt("pickup matchsticks 1,2,3,4 <br>"); // 4 3 4 4 4 1
+            if (p > 4 || p < 1)
+                continue;
+            m = m - p;   // m= 21-4=17 , 17-3=14, 14-4=10, 10-4=6, 6-4=2, 2-1=1
+            document.write("no.of matches left",m,"<br>"); // 17,14,10
+            c = 4 - p;  // c = 4-4=0, 4-3=1
+            document.write("out of which computer picked up",c,"<br>"); // 0 1
+            m = m - c; // m=17-0=17 14-1=13
+            if (m == 1) {  // 17==1, 14==1, 10==1, 6==1, 2==1, 1==1
+                document.write("number of matches left<br>");
+                document.write("you lost the game<br>");
+                break;
+
+            }
+        }
+    </script>
+</body>
+
+</html>

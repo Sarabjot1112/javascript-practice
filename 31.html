@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let x, y, r, dis, d;
+        r = +prompt("enter radius");
+        x = +prompt("enter coordinates x");
+        y = +prompt("enter coordinates y");
+        dis = x * x + y * y;
+        d = r * r;
+        if (dis == d) {
+            document.write("point is outside the circle");
+        }
+        else {
+            document.write("point is inside the circle");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function min(a,b){
+            if(a<b){
+                return a;
+            }
+            return b;    
+        }
+
+
+        function pow(a,b){
+            let i,result=1;
+            for(i=1;i<=b;i++){
+                result=result*a;
+            }    
+            return result;
+        }
+
+
+
+
+        document.write(min(2, 5) == 2);    // true
+        document.write(min(3, -1) == -1); // true
+        document.write(min(1, 1) == 1);  // true
+
+
+        document.write(pow(5, 3));
+
+
+
+    </script>
+</body>
+
+</html>

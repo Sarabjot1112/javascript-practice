@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let otpay, hours, i = 1;
+        while (i <= 4) {
+            let hours = +prompt("enter no of hours worked");
+            if (hours >= 40) {
+                otpay = (hours - 40) * 12;
+                document.write(`Employee id ${i} no of hours worked=${hours} and otpay=${otpay}<br>`)
+            }
+            else {
+                otpay = 0;
+                document.write(`Employee id ${i} no of hours worked is less than 40hrs <br>`)
+            }
+            i = i + 1;
+        }
+    </script>
+</body>
+
+</html>

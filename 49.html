@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Driver program to test above function
+    let a = 12;
+    let b = 4
+    ;
+	let result = Math.min(a, b);
+	while (result > 0) {
+		if (a % result == 0 && b % result == 0) {
+			break;
+		}
+		result--;
+	}
+    document.write("GCD of ",a," and ",b," is ",result); 
+	
+
+
+
+    </script>
+</body>
+</html>

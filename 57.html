@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let pos, neg, zero, num;
+        let ans = 'y';
+        pos = neg = zero = 0;
+        while (ans == 'y' || ans == 'Y') {
+            num = +prompt("enter a number");
+            if (num == 0)
+                zero++;
+            if (num > 0)
+                pos++;
+            if (num < 0)
+                neg++;
+            ans = prompt("do you want to continue , y/n");
+        }
+        document.write("you entered positive number", pos, "<br>");
+        document.write("you entered negative number", neg, "<br>");
+        document.write("you entered zero", zero, "<br>
+        ");
+    </script>
+</body>
+
+</html>

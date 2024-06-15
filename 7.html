@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num = 1234;
+        let revnum = 0;
+        let a, n;
+
+        a = num % 10;
+        n = parseInt(num / 10);
+        revnum = revnum + a * 1000;
+
+        a = n % 10;
+        n = parseInt(n / 10);
+        revnum = revnum + a * 100;
+
+        a = n % 10;
+        n = parseInt(n / 10);
+        revnum = revnum + a * 10;
+
+        a = n % 10;
+        n = parseInt(n / 10);
+        revnum = revnum + a * 1;
+
+    
+        document.write(revnum);
+    </script>
+</body>
+
+</html>

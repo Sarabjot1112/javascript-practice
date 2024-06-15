@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let amount = 100;
+        let notehun, notefifty, noteten, notefive, notetwo, noteone, totalnotes;
+
+        notehun = parseInt(amount / 100);
+        amount = amount % 100;
+
+        notefifty = parseInt(amount / 50);
+        amount = amount % 50;
+
+        noteten = parseInt(amount / 10);
+        amount = amount % 10;
+
+
+        notefive = parseInt(amount / 5);
+        amount = amount % 5;
+
+
+        notetwo = parseInt(amount / 2);
+        amount = amount % 2;
+
+        noteone = parseInt(amount / 1);
+        amount = amount % 1;
+        totalnotes = notehun + notefifty + noteten + notefive + notetwo + noteone;
+        document.write(totalnotes);
+
+
+
+
+
+    </script>
+</body>
+
+</html>

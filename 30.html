@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let x1, y1, x2, y2, x3, y3, s1, s2, s3;
+        x1y1 = +prompt("enter the values of x1 and y1 coordinates of first point");
+        x2y2 = +prompt("enter the values of x2and y2 coordinates of second point");
+        x3y3 = +prompt("enter the value of x3 and y3 coordinates of third point");
+        s1 = Math.abs(x2 - x1) / Math.abs(y2 - y1);
+        s2 = Math.abs(x3 - x1) / Math.abs(y3 - y1);
+        s3 = Math.abs(x3 - x2) / Math.abs(y3 - y2);
+        if ((s1 == s2) && (s1 == s3)) {
+            document.write("points are co-linear")
+        }
+        else {
+            document.write("points are not c0-linear");
+        }
+    </script>
+</body>
+
+</html>
