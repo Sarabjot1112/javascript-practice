@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [1, 23, 33];
+        let obj = { 1: 'aman', 2: 'sarabjot' };
+
+        if (typeof arr == "object" && typeof obj == "object") {
+            if (Array.isArray(arr)) {
+                alert("arr is a array");
+            }
+            else {
+                alert("it is not a array");
+            }
+
+            // Check if obj is an object and not an array
+            if (!Array.isArray(obj)) {
+                alert("obj is an object and not an array");
+            }
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>
