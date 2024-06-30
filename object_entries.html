@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        let arr = ["t", "e", "s", "t"];
+        let prices = {
+            banana: 1,
+            orange: 2,
+            meat: 4,
+        };
 
-alert( arr.slice(1) ); // e,s (copy from 1 to 3)
+        let result = Object.entries(prices).map(entry => [entry[0], entry[1] * 2])
+
+        alert(result);
+
+
     </script>
 </body>
+
 </html>
